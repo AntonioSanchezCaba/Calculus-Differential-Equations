@@ -226,13 +226,13 @@ export function DifferentialEquationsSection() {
                 <CardContent className="space-y-3">
                   <p>Simplest numerical method for solving dy/dx = f(x, y)</p>
                   <div className="math-formula">
-                    y_{n+1} = y_n + h·f(x_n, y_n)
+                    y<sub>n+1</sub> = y<sub>n</sub> + h·f(x<sub>n</sub>, y<sub>n</sub>)
                   </div>
                   <div className="p-3 bg-muted rounded-lg">
                     <strong>Algorithm:</strong><br />
                     1. Start with initial condition (x₀, y₀)<br />
                     2. Choose step size h<br />
-                    3. Compute y_{n+1} using formula<br />
+                    3. Compute y<sub>n+1</sub> using formula<br />
                     4. Repeat for desired number of steps
                   </div>
                 </CardContent>
@@ -245,13 +245,13 @@ export function DifferentialEquationsSection() {
                 <CardContent className="space-y-3">
                   <p>More accurate than Euler's method. RK4 is most common:</p>
                   <div className="space-y-1 text-sm">
-                    <div>k₁ = hf(x_n, y_n)</div>
-                    <div>k₂ = hf(x_n + h/2, y_n + k₁/2)</div>
-                    <div>k₃ = hf(x_n + h/2, y_n + k₂/2)</div>
-                    <div>k₄ = hf(x_n + h, y_n + k₃)</div>
+                    <div>k₁ = hf(x<sub>n</sub>, y<sub>n</sub>)</div>
+                    <div>k₂ = hf(x<sub>n</sub> + h/2, y<sub>n</sub> + k₁/2)</div>
+                    <div>k₃ = hf(x<sub>n</sub> + h/2, y<sub>n</sub> + k₂/2)</div>
+                    <div>k₄ = hf(x<sub>n</sub> + h, y<sub>n</sub> + k₃)</div>
                   </div>
                   <div className="math-formula">
-                    y_{n+1} = y_n + (k₁ + 2k₂ + 2k₃ + k₄)/6
+                    y<sub>n+1</sub> = y<sub>n</sub> + (k₁ + 2k₂ + 2k₃ + k₄)/6
                   </div>
                 </CardContent>
               </Card>
