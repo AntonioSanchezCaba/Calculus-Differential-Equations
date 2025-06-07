@@ -19,28 +19,28 @@ export function AlgebraSection() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         <Card className="section-card">
           <CardHeader>
-            <CardTitle>Why Algebra Matters</CardTitle>
+            <CardTitle>{t("algebra.why.title")}</CardTitle>
             <CardDescription>
-              Understanding the critical role of algebra in calculus
+              {t("algebra.why.desc")}
             </CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
             <ul className="space-y-3">
               <li className="flex items-start space-x-2">
                 <span className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                <span>Polynomial manipulation is essential for derivatives and limits</span>
+                <span>{t("algebra.why.point1")}</span>
               </li>
               <li className="flex items-start space-x-2">
                 <span className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                <span>Factoring techniques simplify complex calculus expressions</span>
+                <span>{t("algebra.why.point2")}</span>
               </li>
               <li className="flex items-start space-x-2">
                 <span className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                <span>Function properties underlie all calculus concepts</span>
+                <span>{t("algebra.why.point3")}</span>
               </li>
               <li className="flex items-start space-x-2">
                 <span className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                <span>Equation solving skills transfer directly to calculus problems</span>
+                <span>{t("algebra.why.point4")}</span>
               </li>
             </ul>
           </CardContent>
@@ -48,9 +48,9 @@ export function AlgebraSection() {
 
         <Card className="section-card">
           <CardHeader>
-            <CardTitle>Quick Reference</CardTitle>
+            <CardTitle>{t("algebra.reference.title")}</CardTitle>
             <CardDescription>
-              Essential formulas and rules at a glance
+              {t("algebra.reference.desc")}
             </CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
@@ -74,7 +74,7 @@ export function AlgebraSection() {
 
       <Accordion type="single" collapsible className="w-full">
         <AccordionItem value="operations">
-          <AccordionTrigger className="text-lg">Basic Algebraic Operations</AccordionTrigger>
+          <AccordionTrigger className="text-lg">{t("algebra.operations.title")}</AccordionTrigger>
           <AccordionContent className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <Card>
@@ -120,7 +120,7 @@ export function AlgebraSection() {
         </AccordionItem>
 
         <AccordionItem value="polynomials">
-          <AccordionTrigger className="text-lg">Polynomials and Factoring</AccordionTrigger>
+          <AccordionTrigger className="text-lg">{t("algebra.polynomials.title")}</AccordionTrigger>
           <AccordionContent className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <Card>
@@ -176,7 +176,7 @@ export function AlgebraSection() {
         </AccordionItem>
 
         <AccordionItem value="equations">
-          <AccordionTrigger className="text-lg">Solving Equations</AccordionTrigger>
+          <AccordionTrigger className="text-lg">{t("algebra.equations.title")}</AccordionTrigger>
           <AccordionContent className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <Card>
@@ -220,7 +220,7 @@ export function AlgebraSection() {
         </AccordionItem>
 
         <AccordionItem value="functions">
-          <AccordionTrigger className="text-lg">Functions and Their Properties</AccordionTrigger>
+          <AccordionTrigger className="text-lg">{t("algebra.functions.title")}</AccordionTrigger>
           <AccordionContent className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <Card>

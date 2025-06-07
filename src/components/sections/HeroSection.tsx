@@ -55,23 +55,23 @@ export function HeroSection() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16">
             <div className="flex flex-col items-center p-6 rounded-lg bg-card border border-border/50 interactive-hover">
               <BookOpen className="h-12 w-12 text-primary mb-4" />
-              <h3 className="text-lg font-semibold mb-2">Comprehensive Content</h3>
+              <h3 className="text-lg font-semibold mb-2">{t("hero.feature1.title")}</h3>
               <p className="text-sm text-muted-foreground text-center">
-                From basic algebra to advanced differential equations with detailed explanations
+                {t("hero.feature1.desc")}
               </p>
             </div>
             <div className="flex flex-col items-center p-6 rounded-lg bg-card border border-border/50 interactive-hover">
               <Calculator className="h-12 w-12 text-primary mb-4" />
-              <h3 className="text-lg font-semibold mb-2">Interactive Examples</h3>
+              <h3 className="text-lg font-semibold mb-2">{t("hero.feature2.title")}</h3>
               <p className="text-sm text-muted-foreground text-center">
-                Step-by-step solutions with visual aids and practical applications
+                {t("hero.feature2.desc")}
               </p>
             </div>
             <div className="flex flex-col items-center p-6 rounded-lg bg-card border border-border/50 interactive-hover">
               <TrendingUp className="h-12 w-12 text-primary mb-4" />
-              <h3 className="text-lg font-semibold mb-2">Progressive Learning</h3>
+              <h3 className="text-lg font-semibold mb-2">{t("hero.feature3.title")}</h3>
               <p className="text-sm text-muted-foreground text-center">
-                Structured roadmap that builds knowledge systematically
+                {t("hero.feature3.desc")}
               </p>
             </div>
           </div>

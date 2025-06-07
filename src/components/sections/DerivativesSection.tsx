@@ -3,25 +3,25 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Badge } from "@/components/ui/badge";
+import { t } from "@/lib/translations";
 
 export function DerivativesSection() {
   return (
     <section id="derivatives" className="space-y-8">
       <div className="text-center space-y-4">
-        <Badge variant="secondary" className="text-sm">Differential Calculus</Badge>
-        <h2 className="text-3xl md:text-4xl font-bold">Derivatives</h2>
+        <Badge variant="secondary" className="text-sm">{t("ui.differential-calculus")}</Badge>
+        <h2 className="text-3xl md:text-4xl font-bold">{t("section.derivatives.title")}</h2>
         <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-          Master the art of finding rates of change. Derivatives are the foundation of differential calculus 
-          and have countless applications in science, engineering, and economics.
+          {t("section.derivatives.subtitle")}
         </p>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         <Card className="section-card">
           <CardHeader>
-            <CardTitle>Definition of the Derivative</CardTitle>
+            <CardTitle>{t("derivatives.definition.title")}</CardTitle>
             <CardDescription>
-              The fundamental concept of instantaneous rate of change
+              {t("derivatives.definition.desc")}
             </CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
@@ -29,21 +29,20 @@ export function DerivativesSection() {
               f'(x) = lim<sub>h→0</sub> [f(x+h) - f(x)] / h
             </div>
             <p className="text-muted-foreground">
-              The derivative represents the slope of the tangent line to the function at any point, 
-              giving us the instantaneous rate of change.
+              {t("derivatives.definition.explanation")}
             </p>
             <div className="p-4 bg-muted rounded-lg">
-              <strong>Geometric Interpretation:</strong><br />
-              The derivative at a point is the slope of the line that just touches the curve at that point.
+              <strong>{t("derivatives.definition.geometric")}</strong><br />
+              {t("derivatives.definition.geometric.desc")}
             </div>
           </CardContent>
         </Card>
 
         <Card className="section-card">
           <CardHeader>
-            <CardTitle>Derivative Notation</CardTitle>
+            <CardTitle>{t("derivatives.notation.title")}</CardTitle>
             <CardDescription>
-              Different ways to express derivatives
+              {t("derivatives.notation.desc")}
             </CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
@@ -54,7 +53,7 @@ export function DerivativesSection() {
               <div><strong>Operator:</strong> Df(x), D²f(x)</div>
             </div>
             <div className="p-4 bg-muted rounded-lg">
-              <strong>Remember:</strong> All notations represent the same concept - the rate of change of the function.
+              <strong>{t("derivatives.notation.remember")}</strong>
             </div>
           </CardContent>
         </Card>

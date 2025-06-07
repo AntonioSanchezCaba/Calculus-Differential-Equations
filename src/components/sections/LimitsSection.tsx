@@ -19,9 +19,9 @@ export function LimitsSection() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         <Card className="section-card">
           <CardHeader>
-            <CardTitle>What is a Limit?</CardTitle>
+            <CardTitle>{t("limits.what.title")}</CardTitle>
             <CardDescription>
-              The foundational concept of calculus
+              {t("limits.what.desc")}
             </CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
@@ -29,41 +29,39 @@ export function LimitsSection() {
               lim<sub>x→a</sub> f(x) = L
             </div>
             <p className="text-muted-foreground">
-              This notation means "the limit of f(x) as x approaches a equals L." 
-              It describes what value the function approaches, not necessarily what it equals at that point.
+              {t("limits.what.explanation")}
             </p>
             <div className="p-4 bg-muted rounded-lg">
-              <strong>Intuitive Understanding:</strong><br />
-              Imagine walking toward a wall. The limit describes how close you can get to the wall, 
-              even if you never actually touch it.
+              <strong>{t("limits.what.intuitive")}</strong><br />
+              {t("limits.what.intuitive.desc")}
             </div>
           </CardContent>
         </Card>
 
         <Card className="section-card">
           <CardHeader>
-            <CardTitle>Types of Limits</CardTitle>
+            <CardTitle>{t("limits.types.title")}</CardTitle>
             <CardDescription>
-              Different scenarios you'll encounter
+              {t("limits.types.desc")}
             </CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
             <ul className="space-y-3">
               <li className="flex items-start space-x-2">
                 <span className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                <span><strong>Finite Limits:</strong> Function approaches a specific number</span>
+                <span><strong>{t("limits.types.finite")}</strong></span>
               </li>
               <li className="flex items-start space-x-2">
                 <span className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                <span><strong>Infinite Limits:</strong> Function grows without bound</span>
+                <span><strong>{t("limits.types.infinite")}</strong></span>
               </li>
               <li className="flex items-start space-x-2">
                 <span className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                <span><strong>One-sided Limits:</strong> Approaching from left or right only</span>
+                <span><strong>{t("limits.types.onesided")}</strong></span>
               </li>
               <li className="flex items-start space-x-2">
                 <span className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                <span><strong>Limits at Infinity:</strong> Behavior as x approaches ±∞</span>
+                <span><strong>{t("limits.types.infinity")}</strong></span>
               </li>
             </ul>
           </CardContent>

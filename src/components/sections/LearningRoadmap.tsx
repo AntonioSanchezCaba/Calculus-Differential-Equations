@@ -3,96 +3,97 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { CheckCircle, Clock, BookOpen, Calculator, TrendingUp, Zap } from "lucide-react";
+import { t } from "@/lib/translations";
 
 export function LearningRoadmap() {
   const roadmapSteps = [
     {
       id: 1,
-      title: "Master Algebraic Foundations",
-      description: "Build a solid foundation with essential algebra skills",
+      title: t("roadmap.step1.title"),
+      description: t("roadmap.step1.description"),
       icon: BookOpen,
-      duration: "2-3 weeks",
-      difficulty: "Beginner",
+      duration: t("roadmap.step1.duration"),
+      difficulty: t("ui.beginner"),
       topics: [
-        "Order of operations and basic arithmetic",
-        "Polynomial operations and factoring",
-        "Solving linear and quadratic equations",
-        "Functions and their properties"
+        t("roadmap.step1.topic1"),
+        t("roadmap.step1.topic2"),
+        t("roadmap.step1.topic3"),
+        t("roadmap.step1.topic4")
       ],
       color: "bg-green-500"
     },
     {
       id: 2,
-      title: "Understand Limits & Continuity",
-      description: "Grasp the fundamental concepts that bridge algebra and calculus",
+      title: t("roadmap.step2.title"),
+      description: t("roadmap.step2.description"),
       icon: TrendingUp,
-      duration: "2-3 weeks",
-      difficulty: "Intermediate",
+      duration: t("roadmap.step2.duration"),
+      difficulty: t("ui.intermediate"),
       topics: [
-        "Intuitive understanding of limits",
-        "Limit evaluation techniques",
-        "Continuity and discontinuities",
-        "Limits at infinity"
+        t("roadmap.step2.topic1"),
+        t("roadmap.step2.topic2"),
+        t("roadmap.step2.topic3"),
+        t("roadmap.step2.topic4")
       ],
       color: "bg-blue-500"
     },
     {
       id: 3,
-      title: "Master Differential Calculus",
-      description: "Learn to find rates of change and slopes of curves",
+      title: t("roadmap.step3.title"),
+      description: t("roadmap.step3.description"),
       icon: Calculator,
-      duration: "3-4 weeks",
-      difficulty: "Intermediate",
+      duration: t("roadmap.step3.duration"),
+      difficulty: t("ui.intermediate"),
       topics: [
-        "Definition and interpretation of derivatives",
-        "Differentiation rules and techniques",
-        "Chain rule and implicit differentiation",
-        "Applications: optimization, related rates"
+        t("roadmap.step3.topic1"),
+        t("roadmap.step3.topic2"),
+        t("roadmap.step3.topic3"),
+        t("roadmap.step3.topic4")
       ],
       color: "bg-purple-500"
     },
     {
       id: 4,
-      title: "Explore Integral Calculus",
-      description: "Discover the reverse of differentiation and its applications",
+      title: t("roadmap.step4.title"),
+      description: t("roadmap.step4.description"),
       icon: TrendingUp,
-      duration: "3-4 weeks",
-      difficulty: "Intermediate",
+      duration: t("roadmap.step4.duration"),
+      difficulty: t("ui.intermediate"),
       topics: [
-        "Antiderivatives and indefinite integrals",
-        "Integration techniques and substitution",
-        "Definite integrals and applications",
-        "Area, volume, and arc length problems"
+        t("roadmap.step4.topic1"),
+        t("roadmap.step4.topic2"),
+        t("roadmap.step4.topic3"),
+        t("roadmap.step4.topic4")
       ],
       color: "bg-orange-500"
     },
     {
       id: 5,
-      title: "Dive into Differential Equations",
-      description: "Model dynamic systems with differential equations",
+      title: t("roadmap.step5.title"),
+      description: t("roadmap.step5.description"),
       icon: Zap,
-      duration: "4-5 weeks",
-      difficulty: "Advanced",
+      duration: t("roadmap.step5.duration"),
+      difficulty: t("ui.advanced"),
       topics: [
-        "First-order differential equations",
-        "Second-order linear equations",
-        "Applications in physics and biology",
-        "Numerical methods and solutions"
+        t("roadmap.step5.topic1"),
+        t("roadmap.step5.topic2"),
+        t("roadmap.step5.topic3"),
+        t("roadmap.step5.topic4")
       ],
       color: "bg-red-500"
     },
     {
       id: 6,
-      title: "Advanced Topics & Applications",
-      description: "Explore specialized topics and real-world applications",
+      title: t("roadmap.step6.title"),
+      description: t("roadmap.step6.description"),
       icon: BookOpen,
-      duration: "Ongoing",
-      difficulty: "Advanced",
+      duration: t("roadmap.step6.duration"),
+      difficulty: t("ui.advanced"),
       topics: [
-        "Partial differential equations",
-        "Laplace transforms",
-        "Fourier series and analysis",
-        "Mathematical modeling"
+        t("roadmap.step6.topic1"),
+        t("roadmap.step6.topic2"),
+        t("roadmap.step6.topic3"),
+        t("roadmap.step6.topic4")
       ],
       color: "bg-indigo-500"
     }
@@ -101,11 +102,10 @@ export function LearningRoadmap() {
   return (
     <section id="roadmap" className="space-y-8">
       <div className="text-center space-y-4">
-        <Badge variant="secondary" className="text-sm">Learning Path</Badge>
-        <h2 className="text-3xl md:text-4xl font-bold">Your Calculus Learning Roadmap</h2>
+        <Badge variant="secondary" className="text-sm">{t("ui.learning-path")}</Badge>
+        <h2 className="text-3xl md:text-4xl font-bold">{t("section.roadmap.title")}</h2>
         <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-          Follow this structured path to build a strong foundation and systematically advance 
-          through calculus and differential equations.
+          {t("section.roadmap.subtitle")}
         </p>
       </div>
 
@@ -139,7 +139,7 @@ export function LearningRoadmap() {
                 </div>
                 
                 <div className="space-y-2">
-                  <h4 className="font-medium text-sm">Key Topics:</h4>
+                  <h4 className="font-medium text-sm">{t("ui.key-topics")}</h4>
                   <ul className="space-y-1">
                     {step.topics.map((topic, topicIndex) => (
                       <li key={topicIndex} className="flex items-start space-x-2 text-sm">
@@ -157,23 +157,22 @@ export function LearningRoadmap() {
 
       <div className="mt-12 p-6 bg-gradient-to-r from-primary/10 to-secondary/10 rounded-xl border border-primary/20">
         <div className="text-center space-y-4">
-          <h3 className="text-2xl font-bold">Ready to Start Your Journey?</h3>
+          <h3 className="text-2xl font-bold">{t("ui.ready-start")}</h3>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Remember, mastering calculus is a marathon, not a sprint. Take your time with each concept, 
-            practice regularly, and don't hesitate to revisit earlier topics when needed.
+            {t("ui.ready-desc")}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-6">
             <div className="flex items-center space-x-2 text-sm">
               <CheckCircle className="h-4 w-4 text-green-500" />
-              <span>Practice problems included</span>
+              <span>{t("ui.practice-included")}</span>
             </div>
             <div className="flex items-center space-x-2 text-sm">
               <CheckCircle className="h-4 w-4 text-green-500" />
-              <span>Step-by-step solutions</span>
+              <span>{t("ui.step-solutions")}</span>
             </div>
             <div className="flex items-center space-x-2 text-sm">
               <CheckCircle className="h-4 w-4 text-green-500" />
-              <span>Real-world applications</span>
+              <span>{t("ui.real-world")}</span>
             </div>
           </div>
         </div>
