@@ -3,25 +3,25 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Badge } from "@/components/ui/badge";
+import { t } from "@/lib/translations";
 
 export function IntegralsSection() {
   return (
     <section id="integrals" className="space-y-8">
       <div className="text-center space-y-4">
-        <Badge variant="secondary" className="text-sm">Integral Calculus</Badge>
-        <h2 className="text-3xl md:text-4xl font-bold">Integral Calculus</h2>
+        <Badge variant="secondary" className="text-sm">{t("ui.integral-calculus")}</Badge>
+        <h2 className="text-3xl md:text-4xl font-bold">{t("section.integrals.title")}</h2>
         <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-          Discover the reverse of differentiation. Integration allows us to find areas, volumes, 
-          and accumulate quantities over intervals.
+          {t("section.integrals.subtitle")}
         </p>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         <Card className="section-card">
           <CardHeader>
-            <CardTitle>What is Integration?</CardTitle>
+            <CardTitle>{t("integrals.what.title")}</CardTitle>
             <CardDescription>
-              The inverse operation of differentiation
+              {t("integrals.what.desc")}
             </CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
@@ -41,9 +41,9 @@ export function IntegralsSection() {
 
         <Card className="section-card">
           <CardHeader>
-            <CardTitle>Types of Integrals</CardTitle>
+            <CardTitle>{t("integrals.types.title")}</CardTitle>
             <CardDescription>
-              Indefinite vs. definite integrals
+              {t("integrals.types.desc")}
             </CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
@@ -67,7 +67,7 @@ export function IntegralsSection() {
 
       <Accordion type="single" collapsible className="w-full">
         <AccordionItem value="basic-integrals">
-          <AccordionTrigger className="text-lg">Basic Integration Rules</AccordionTrigger>
+          <AccordionTrigger className="text-lg">{t("accordion.integrals.basic")}</AccordionTrigger>
           <AccordionContent className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <Card>
@@ -107,7 +107,7 @@ export function IntegralsSection() {
         </AccordionItem>
 
         <AccordionItem value="substitution">
-          <AccordionTrigger className="text-lg">Integration by Substitution</AccordionTrigger>
+          <AccordionTrigger className="text-lg">{t("accordion.integrals.substitution")}</AccordionTrigger>
           <AccordionContent className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <Card>
@@ -152,7 +152,7 @@ export function IntegralsSection() {
         </AccordionItem>
 
         <AccordionItem value="integration-by-parts">
-          <AccordionTrigger className="text-lg">Integration by Parts</AccordionTrigger>
+          <AccordionTrigger className="text-lg">{t("accordion.integrals.parts")}</AccordionTrigger>
           <AccordionContent className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <Card>
@@ -192,7 +192,7 @@ export function IntegralsSection() {
         </AccordionItem>
 
         <AccordionItem value="definite-integrals">
-          <AccordionTrigger className="text-lg">Definite Integrals and Applications</AccordionTrigger>
+          <AccordionTrigger className="text-lg">{t("accordion.integrals.definite")}</AccordionTrigger>
           <AccordionContent className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <Card>
@@ -229,7 +229,7 @@ export function IntegralsSection() {
         </AccordionItem>
 
         <AccordionItem value="improper-integrals">
-          <AccordionTrigger className="text-lg">Improper Integrals</AccordionTrigger>
+          <AccordionTrigger className="text-lg">{t("accordion.integrals.improper")}</AccordionTrigger>
           <AccordionContent className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <Card>

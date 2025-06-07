@@ -70,7 +70,7 @@ export function LimitsSection() {
 
       <Accordion type="single" collapsible className="w-full">
         <AccordionItem value="basic-limits">
-          <AccordionTrigger className="text-lg">Basic Limit Evaluation</AccordionTrigger>
+          <AccordionTrigger className="text-lg">{t("accordion.limits.basic")}</AccordionTrigger>
           <AccordionContent className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <Card>
@@ -112,7 +112,7 @@ export function LimitsSection() {
         </AccordionItem>
 
         <AccordionItem value="limit-laws">
-          <AccordionTrigger className="text-lg">Limit Laws and Properties</AccordionTrigger>
+          <AccordionTrigger className="text-lg">{t("accordion.limits.laws")}</AccordionTrigger>
           <AccordionContent className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <Card>
@@ -152,7 +152,7 @@ export function LimitsSection() {
         </AccordionItem>
 
         <AccordionItem value="continuity">
-          <AccordionTrigger className="text-lg">Continuity</AccordionTrigger>
+          <AccordionTrigger className="text-lg">{t("accordion.limits.continuity")}</AccordionTrigger>
           <AccordionContent className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <Card>
@@ -192,7 +192,7 @@ export function LimitsSection() {
         </AccordionItem>
 
         <AccordionItem value="advanced-techniques">
-          <AccordionTrigger className="text-lg">Advanced Limit Techniques</AccordionTrigger>
+          <AccordionTrigger className="text-lg">{t("accordion.limits.advanced")}</AccordionTrigger>
           <AccordionContent className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <Card>

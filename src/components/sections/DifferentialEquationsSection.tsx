@@ -3,25 +3,25 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Badge } from "@/components/ui/badge";
+import { t } from "@/lib/translations";
 
 export function DifferentialEquationsSection() {
   return (
     <section id="differential-equations" className="space-y-8">
       <div className="text-center space-y-4">
-        <Badge variant="secondary" className="text-sm">Advanced Topic</Badge>
-        <h2 className="text-3xl md:text-4xl font-bold">Differential Equations</h2>
+        <Badge variant="secondary" className="text-sm">{t("ui.advanced-topic")}</Badge>
+        <h2 className="text-3xl md:text-4xl font-bold">{t("section.differential-equations.title")}</h2>
         <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-          Explore equations involving derivatives and their solutions. Differential equations model 
-          dynamic systems in physics, engineering, biology, and economics.
+          {t("section.differential-equations.subtitle")}
         </p>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         <Card className="section-card">
           <CardHeader>
-            <CardTitle>What are Differential Equations?</CardTitle>
+            <CardTitle>{t("de.what.title")}</CardTitle>
             <CardDescription>
-              Equations involving functions and their derivatives
+              {t("de.what.desc")}
             </CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
@@ -42,9 +42,9 @@ export function DifferentialEquationsSection() {
 
         <Card className="section-card">
           <CardHeader>
-            <CardTitle>Classification</CardTitle>
+            <CardTitle>{t("de.classification.title")}</CardTitle>
             <CardDescription>
-              Different types of differential equations
+              {t("de.classification.desc")}
             </CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
@@ -75,7 +75,7 @@ export function DifferentialEquationsSection() {
 
       <Accordion type="single" collapsible className="w-full">
         <AccordionItem value="first-order">
-          <AccordionTrigger className="text-lg">First-Order Differential Equations</AccordionTrigger>
+          <AccordionTrigger className="text-lg">{t("accordion.de.first")}</AccordionTrigger>
           <AccordionContent className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <Card>
@@ -120,7 +120,7 @@ export function DifferentialEquationsSection() {
         </AccordionItem>
 
         <AccordionItem value="second-order">
-          <AccordionTrigger className="text-lg">Second-Order Differential Equations</AccordionTrigger>
+          <AccordionTrigger className="text-lg">{t("accordion.de.second")}</AccordionTrigger>
           <AccordionContent className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <Card>
@@ -163,7 +163,7 @@ export function DifferentialEquationsSection() {
         </AccordionItem>
 
         <AccordionItem value="applications">
-          <AccordionTrigger className="text-lg">Applications of Differential Equations</AccordionTrigger>
+          <AccordionTrigger className="text-lg">{t("accordion.de.applications")}</AccordionTrigger>
           <AccordionContent className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <Card>
@@ -216,7 +216,7 @@ export function DifferentialEquationsSection() {
         </AccordionItem>
 
         <AccordionItem value="numerical-methods">
-          <AccordionTrigger className="text-lg">Numerical Methods</AccordionTrigger>
+          <AccordionTrigger className="text-lg">{t("accordion.de.numerical")}</AccordionTrigger>
           <AccordionContent className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <Card>

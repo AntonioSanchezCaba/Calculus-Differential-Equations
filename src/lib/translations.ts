@@ -52,10 +52,39 @@ export const translations = {
     "algebra.why.point4": "Equation solving skills transfer directly to calculus problems",
     "algebra.reference.title": "Quick Reference",
     "algebra.reference.desc": "Essential formulas and rules at a glance",
-    "algebra.operations.title": "Basic Algebraic Operations",
-    "algebra.polynomials.title": "Polynomials and Factoring",
-    "algebra.equations.title": "Solving Equations",
-    "algebra.functions.title": "Functions and Their Properties",
+
+    // Accordion Titles - Algebra
+    "accordion.algebra.operations": "Basic Algebraic Operations",
+    "accordion.algebra.polynomials": "Polynomials and Factoring",
+    "accordion.algebra.exponents": "Exponents and Radicals",
+    "accordion.algebra.equations": "Solving Equations",
+    "accordion.algebra.functions": "Functions and Their Properties",
+
+    // Accordion Titles - Limits
+    "accordion.limits.basic": "Basic Limit Evaluation",
+    "accordion.limits.laws": "Limit Laws and Properties",
+    "accordion.limits.continuity": "Continuity",
+    "accordion.limits.advanced": "Advanced Limit Techniques",
+
+    // Accordion Titles - Derivatives
+    "accordion.derivatives.basic": "Basic Differentiation Rules",
+    "accordion.derivatives.product": "Product and Quotient Rules",
+    "accordion.derivatives.chain": "Chain Rule",
+    "accordion.derivatives.implicit": "Implicit Differentiation",
+    "accordion.derivatives.applications": "Applications of Derivatives",
+
+    // Accordion Titles - Integrals
+    "accordion.integrals.basic": "Basic Integration Rules",
+    "accordion.integrals.substitution": "Integration by Substitution",
+    "accordion.integrals.parts": "Integration by Parts",
+    "accordion.integrals.definite": "Definite Integrals and Applications",
+    "accordion.integrals.improper": "Improper Integrals",
+
+    // Accordion Titles - Differential Equations
+    "accordion.de.first": "First-Order Differential Equations",
+    "accordion.de.second": "Second-Order Differential Equations",
+    "accordion.de.applications": "Applications of Differential Equations",
+    "accordion.de.numerical": "Numerical Methods",
 
     // Limits Section Content
     "limits.what.title": "What is a Limit?",
@@ -79,6 +108,18 @@ export const translations = {
     "derivatives.notation.title": "Derivative Notation",
     "derivatives.notation.desc": "Different ways to express derivatives",
     "derivatives.notation.remember": "Remember: All notations represent the same concept - the rate of change of the function.",
+
+    // Integrals Section Content
+    "integrals.what.title": "What is Integration?",
+    "integrals.what.desc": "The inverse operation of differentiation",
+    "integrals.types.title": "Types of Integrals",
+    "integrals.types.desc": "Indefinite vs. definite integrals",
+
+    // Differential Equations Content
+    "de.what.title": "What are Differential Equations?",
+    "de.what.desc": "Equations involving functions and their derivatives",
+    "de.classification.title": "Classification",
+    "de.classification.desc": "Different types of differential equations",
 
     // Roadmap Steps
     "roadmap.step1.title": "Master Algebraic Foundations",
@@ -208,10 +249,39 @@ export const translations = {
     "algebra.why.point4": "Las habilidades de resolución de ecuaciones se transfieren directamente a problemas de cálculo",
     "algebra.reference.title": "Referencia Rápida",
     "algebra.reference.desc": "Fórmulas y reglas esenciales de un vistazo",
-    "algebra.operations.title": "Operaciones Algebraicas Básicas",
-    "algebra.polynomials.title": "Polinomios y Factorización",
-    "algebra.equations.title": "Resolución de Ecuaciones",
-    "algebra.functions.title": "Funciones y Sus Propiedades",
+
+    // Accordion Titles - Algebra
+    "accordion.algebra.operations": "Operaciones Algebraicas Básicas",
+    "accordion.algebra.polynomials": "Polinomios y Factorización",
+    "accordion.algebra.exponents": "Exponentes y Radicales",
+    "accordion.algebra.equations": "Resolución de Ecuaciones",
+    "accordion.algebra.functions": "Funciones y Sus Propiedades",
+
+    // Accordion Titles - Limits
+    "accordion.limits.basic": "Evaluación Básica de Límites",
+    "accordion.limits.laws": "Leyes y Propiedades de Límites",
+    "accordion.limits.continuity": "Continuidad",
+    "accordion.limits.advanced": "Técnicas Avanzadas de Límites",
+
+    // Accordion Titles - Derivatives
+    "accordion.derivatives.basic": "Reglas Básicas de Diferenciación",
+    "accordion.derivatives.product": "Reglas del Producto y Cociente",
+    "accordion.derivatives.chain": "Regla de la Cadena",
+    "accordion.derivatives.implicit": "Diferenciación Implícita",
+    "accordion.derivatives.applications": "Aplicaciones de las Derivadas",
+
+    // Accordion Titles - Integrals
+    "accordion.integrals.basic": "Reglas Básicas de Integración",
+    "accordion.integrals.substitution": "Integración por Sustitución",
+    "accordion.integrals.parts": "Integración por Partes",
+    "accordion.integrals.definite": "Integrales Definidas y Aplicaciones",
+    "accordion.integrals.improper": "Integrales Impropias",
+
+    // Accordion Titles - Differential Equations
+    "accordion.de.first": "Ecuaciones Diferenciales de Primer Orden",
+    "accordion.de.second": "Ecuaciones Diferenciales de Segundo Orden",
+    "accordion.de.applications": "Aplicaciones de Ecuaciones Diferenciales",
+    "accordion.de.numerical": "Métodos Numéricos",
 
     // Limits Section Content
     "limits.what.title": "¿Qué es un Límite?",
@@ -235,6 +305,18 @@ export const translations = {
     "derivatives.notation.title": "Notación de Derivadas",
     "derivatives.notation.desc": "Diferentes formas de expresar derivadas",
     "derivatives.notation.remember": "Recuerda: Todas las notaciones representan el mismo concepto - la tasa de cambio de la función.",
+
+    // Integrals Section Content
+    "integrals.what.title": "¿Qué es la Integración?",
+    "integrals.what.desc": "La operación inversa de la diferenciación",
+    "integrals.types.title": "Tipos de Integrales",
+    "integrals.types.desc": "Integrales indefinidas vs. definidas",
+
+    // Differential Equations Content
+    "de.what.title": "¿Qué son las Ecuaciones Diferenciales?",
+    "de.what.desc": "Ecuaciones que involucran funciones y sus derivadas",
+    "de.classification.title": "Clasificación",
+    "de.classification.desc": "Diferentes tipos de ecuaciones diferenciales",
 
     // Roadmap Steps
     "roadmap.step1.title": "Domina los Fundamentos Algebraicos",

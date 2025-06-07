@@ -74,7 +74,7 @@ export function AlgebraSection() {
 
       <Accordion type="single" collapsible className="w-full">
         <AccordionItem value="operations">
-          <AccordionTrigger className="text-lg">{t("algebra.operations.title")}</AccordionTrigger>
+          <AccordionTrigger className="text-lg">{t("accordion.algebra.operations")}</AccordionTrigger>
           <AccordionContent className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <Card>
@@ -120,7 +120,7 @@ export function AlgebraSection() {
         </AccordionItem>
 
         <AccordionItem value="polynomials">
-          <AccordionTrigger className="text-lg">{t("algebra.polynomials.title")}</AccordionTrigger>
+          <AccordionTrigger className="text-lg">{t("accordion.algebra.polynomials")}</AccordionTrigger>
           <AccordionContent className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <Card>
@@ -176,7 +176,7 @@ export function AlgebraSection() {
         </AccordionItem>
 
         <AccordionItem value="equations">
-          <AccordionTrigger className="text-lg">{t("algebra.equations.title")}</AccordionTrigger>
+          <AccordionTrigger className="text-lg">{t("accordion.algebra.equations")}</AccordionTrigger>
           <AccordionContent className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <Card>
@@ -220,7 +220,7 @@ export function AlgebraSection() {
         </AccordionItem>
 
         <AccordionItem value="functions">
-          <AccordionTrigger className="text-lg">{t("algebra.functions.title")}</AccordionTrigger>
+          <AccordionTrigger className="text-lg">{t("accordion.algebra.functions")}</AccordionTrigger>
           <AccordionContent className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <Card>

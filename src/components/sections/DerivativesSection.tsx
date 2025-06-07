@@ -61,7 +61,7 @@ export function DerivativesSection() {
 
       <Accordion type="single" collapsible className="w-full">
         <AccordionItem value="basic-rules">
-          <AccordionTrigger className="text-lg">Basic Differentiation Rules</AccordionTrigger>
+          <AccordionTrigger className="text-lg">{t("accordion.derivatives.basic")}</AccordionTrigger>
           <AccordionContent className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <Card>
@@ -101,7 +101,7 @@ export function DerivativesSection() {
         </AccordionItem>
 
         <AccordionItem value="product-quotient">
-          <AccordionTrigger className="text-lg">Product and Quotient Rules</AccordionTrigger>
+          <AccordionTrigger className="text-lg">{t("accordion.derivatives.product")}</AccordionTrigger>
           <AccordionContent className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <Card>
@@ -143,7 +143,7 @@ export function DerivativesSection() {
         </AccordionItem>
 
         <AccordionItem value="chain-rule">
-          <AccordionTrigger className="text-lg">Chain Rule</AccordionTrigger>
+          <AccordionTrigger className="text-lg">{t("accordion.derivatives.chain")}</AccordionTrigger>
           <AccordionContent className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <Card>
@@ -184,7 +184,7 @@ export function DerivativesSection() {
         </AccordionItem>
 
         <AccordionItem value="implicit">
-          <AccordionTrigger className="text-lg">Implicit Differentiation</AccordionTrigger>
+          <AccordionTrigger className="text-lg">{t("accordion.derivatives.implicit")}</AccordionTrigger>
           <AccordionContent className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <Card>
@@ -224,7 +224,7 @@ export function DerivativesSection() {
         </AccordionItem>
 
         <AccordionItem value="applications">
-          <AccordionTrigger className="text-lg">Applications of Derivatives</AccordionTrigger>
+          <AccordionTrigger className="text-lg">{t("accordion.derivatives.applications")}</AccordionTrigger>
           <AccordionContent className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <Card>
