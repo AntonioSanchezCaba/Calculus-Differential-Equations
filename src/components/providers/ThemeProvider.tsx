@@ -28,13 +28,27 @@ export function ThemeProvider({
   storageKey = "ui-theme",
   ...props
 }: ThemeProviderProps) {
-  const [theme, setTheme] = useState<Theme>(
-    () => (typeof window !== "undefined" && localStorage.getItem(storageKey)) as Theme || defaultTheme
-  );
+  const [theme, setTheme] = useState<Theme>(defaultTheme);
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    const root = window.document.documentElement;
+    setMounted(true);
+    
+    // Only access localStorage after component mounts
+    try {
+      const savedTheme = localStorage.getItem(storageKey) as Theme;
+      if (savedTheme) {
+        setTheme(savedTheme);
+      }
+    } catch (error) {
+      console.warn("Failed to access localStorage:", error);
+    }
+  }, [storageKey]);
 
+  useEffect(() => {
+    if (!mounted) return;
+
+    const root = window.document.documentElement;
     root.classList.remove("light", "dark");
 
     if (theme === "system") {
@@ -48,15 +62,24 @@ export function ThemeProvider({
     }
 
     root.classList.add(theme);
-  }, [theme]);
+  }, [theme, mounted]);
 
   const value = {
     theme,
     setTheme: (theme: Theme) => {
-      localStorage.setItem(storageKey, theme);
+      try {
+        localStorage.setItem(storageKey, theme);
+      } catch (error) {
+        console.warn("Failed to save theme to localStorage:", error);
+      }
       setTheme(theme);
     },
   };
+
+  // Don't render children until mounted to prevent hydration mismatch
+  if (!mounted) {
+    return null;
+  }
 
   return (
     <ThemeProviderContext.Provider {...props} value={value}>
