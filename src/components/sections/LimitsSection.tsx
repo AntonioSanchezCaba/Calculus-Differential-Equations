@@ -3,16 +3,16 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Badge } from "@/components/ui/badge";
+import { t } from "@/lib/translations";
 
 export function LimitsSection() {
   return (
     <section id="limits" className="space-y-8">
       <div className="text-center space-y-4">
-        <Badge variant="secondary" className="text-sm">Core Concept</Badge>
-        <h2 className="text-3xl md:text-4xl font-bold">Limits & Continuity</h2>
+        <Badge variant="secondary" className="text-sm">{t("ui.core-concept")}</Badge>
+        <h2 className="text-3xl md:text-4xl font-bold">{t("section.limits.title")}</h2>
         <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-          Understand the fundamental concept that bridges algebra and calculus. Limits describe the behavior 
-          of functions as they approach specific values.
+          {t("section.limits.subtitle")}
         </p>
       </div>
 
