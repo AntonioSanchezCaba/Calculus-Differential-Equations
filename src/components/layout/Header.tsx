@@ -4,18 +4,20 @@ import { useState } from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/ui/theme-toggle";
+import { LanguageToggle } from "@/components/ui/language-toggle";
 import { Calculator, Menu, X } from "lucide-react";
+import { t } from "@/lib/translations";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navigation = [
-    { name: "Algebra", href: "#algebra" },
-    { name: "Limits", href: "#limits" },
-    { name: "Derivatives", href: "#derivatives" },
-    { name: "Integrals", href: "#integrals" },
-    { name: "Differential Equations", href: "#differential-equations" },
-    { name: "Roadmap", href: "#roadmap" },
+    { name: t("header.algebra"), href: "#algebra" },
+    { name: t("header.limits"), href: "#limits" },
+    { name: t("header.derivatives"), href: "#derivatives" },
+    { name: t("header.integrals"), href: "#integrals" },
+    { name: t("header.differential-equations"), href: "#differential-equations" },
+    { name: t("header.roadmap"), href: "#roadmap" },
   ];
 
   return (
@@ -26,7 +28,7 @@ export function Header() {
             <Calculator className="h-8 w-8 text-primary" />
             <Link href="/" className="text-xl font-bold">
               <span className="bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">
-                Calculus Master
+                {t("header.title")}
               </span>
             </Link>
           </div>
@@ -45,6 +47,7 @@ export function Header() {
           </nav>
 
           <div className="flex items-center space-x-2">
+            <LanguageToggle />
             <ThemeToggle />
             <Button
               variant="ghost"

@@ -3,16 +3,16 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Badge } from "@/components/ui/badge";
+import { t } from "@/lib/translations";
 
 export function AlgebraSection() {
   return (
     <section id="algebra" className="space-y-8">
       <div className="text-center space-y-4">
-        <Badge variant="secondary" className="text-sm">Foundation</Badge>
-        <h2 className="text-3xl md:text-4xl font-bold">Foundational Algebra</h2>
+        <Badge variant="secondary" className="text-sm">{t("ui.foundation")}</Badge>
+        <h2 className="text-3xl md:text-4xl font-bold">{t("section.algebra.title")}</h2>
         <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-          Master the algebraic foundations essential for calculus success. These concepts form the backbone 
-          of all advanced mathematical operations.
+          {t("section.algebra.subtitle")}
         </p>
       </div>
 
